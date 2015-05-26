@@ -13,9 +13,7 @@ include_once './menu.php';
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="resources/css/bootstrap.min.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <!--[if lt IE 9]>
-                <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+       
         <link href="resources/css/styles.css" rel="stylesheet">
     </head>
     <body>
