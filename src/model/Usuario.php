@@ -13,7 +13,7 @@ class Usuario {
     private $apelido;
 
     function __construct() {
-        
+        session_start();
     }
 
     function getIdUsuario() {

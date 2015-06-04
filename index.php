@@ -24,14 +24,12 @@
     <body>
 
         <span href="#" class="button" id="toggle-login">Log in</span>
-        <span href="#" class="button2" id="toggle-cadastro">Cadastre-se</span>
-
-         
+                 
         <div id="login">
             <div id="triangle"></div>
             <h1>Log in</h1>
             <form  method="post" action="login.php" id="formlogin" name="formlogin" >
-                <input name="login" autofocus required type="email" placeholder="Email" />
+                <input name="login" autofocus required type="text" placeholder="Email" />
                 <input id="senha" name="senha" type="password" placeholder="Password" />
                 <input type="submit" value="Log in" />
                 <a href="#" >Esqueci minha senha</a> </br>
@@ -42,24 +40,7 @@
 
 
         </div>
-       <!--
-        <div id="cadastro">
-            <div id="triangle2"> </div>
-            <h1> Cadastro </h1>
-            
-            <form method="post" action="src/controller/cadastro.php" id="formcadastro" name="formcadastro">
-                   <input name="nome" autofocus required type="text" placeholder="Nome" /> 
-                <input id="email" name="email" required type="text" placeholder="E-mail" />
-                <input id="senha" name="senha" required type="password" placeholder="senha" />
-                <input id="apelido" name="apelido" required type="text" placeholder="Nick Name" />
-                
-                
-                <input type="submit" value="Cadastrar" />
-          
-            </form>
-            
-            
-        </div> -->
+       
 
         <script src="resources/js/jquery.js"></script>
 
