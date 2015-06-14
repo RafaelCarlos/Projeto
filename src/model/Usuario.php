@@ -5,15 +5,41 @@
  *
  * @author Rafael Carlos
  */
+
+/**
+ * @Entity
+ * @Table(name="usuario")
+ */
 class Usuario {
 
+    /**
+     *
+     * @Id
+     * @GeneratedValue(strategy="AUTO")
+     * @Column(type="integer", name="id_usuario")
+     */
     private $idUsuario;
+
+    /**
+     *
+     * @Column(type="string", length=50, unique=true, nullable=false)
+     */
     private $login;
+
+    /**
+     *
+     * @Column(type="string", length=255, nullable=false)
+     */
     private $senha;
+
+    /**
+     *
+     * @Column(type="string", length=30, nullable=false)
+     */
     private $apelido;
 
     function __construct() {
-        session_start();
+        
     }
 
     function getIdUsuario() {

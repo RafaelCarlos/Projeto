@@ -19,25 +19,25 @@ class FornecedorParceiro {
      * @Column(type="integer",name="id_fornecedor")
      */
     private $id_fornecedor;
-    
+
     /**
      *
      * @Column(name="razao_social",type="string", length=100, nullable=false)
      */
     private $razao_social;
-    
+
     /**
      *
      * @Column(name="telefone",type="string", length=15, nullable=false)
      */
     private $telefone;
-    
+
     /**
      *
      * @Column(name="cnpj",type="string", length=20, nullable=false)
      */
     private $cnpj;
-    
+
     /**
      *
      * @OneToOne(targetEntity="Usuario.class.php") 

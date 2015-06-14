@@ -5,16 +5,69 @@
  *
  * @author Rafael Carlos
  */
+
+/**
+ * @Entity
+ * @Table(name="cliente")
+ */
 class Cliente {
 
+    /**
+     *
+     * @Id
+     * @GeneratedValue(strategy="AUTO")
+     * @Column(type="integer", name="id_cliente")
+     */
     private $id_cliente;
+
+    /**
+     *
+     * @Column(type="string", name="cpf", length=14, unique=true, nullable=false)
+     */
     private $cpf;
+
+    /**
+     *
+     * @Column(type="string",name="nome_cliente", length=100, nullable=false)
+     */
     private $nome_cliente;
+
+    /**
+     *
+     * @Column(type="string",name="rg_cliente", length=15, nullable=false)
+     */
     private $rg_cliente;
+
+    /**
+     *
+     * @Column(type="string",name="telefone_cliente", length=15, nullable=false)
+     */
     private $telefone_cliente;
+
+    /**
+     *
+     * @Column(type="integer", name="quantidade_cliente")
+     */
     private $quantidade_clientes;
+
+    /**
+     *
+     * @Column(type="string",name="sexo_cliente", length=20, nullable=false)
+     */
     private $sexo_cliente;
+
+    /**
+     *
+     * @Date
+     * @Column(name="data_nascimento", nullable=false)
+     */
     private $data_nascimento;
+
+    /**
+     *
+     * @OneToOne(targetEntity="Usuario")
+     * @JoinColumn(name="usuario_id_usuario", referencedColumnName="id_usuario")
+     */
     private $usuario_id_usuario;
 
     function __construct() {

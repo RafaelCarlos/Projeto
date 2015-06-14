@@ -1,0 +1,11 @@
+{
+    "name": "vendor/projeto",
+    "description": "Description of project Projeto.",
+    "authors": [
+        {
+            "name": "Rafael Carlos",
+            "email": "shanglangjunior@hotmail.com"
+        }
+    ],
+    "require": {}
+}

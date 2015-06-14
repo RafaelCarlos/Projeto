@@ -5,16 +5,69 @@
  *
  * @author Rafael Carlos
  */
+
+/**
+ * @Entity
+ * @Table(name="endereco")
+ */
 class Endererco {
 
+    /**
+     *
+     * @Id
+     * @GeneratedValue(strategy="AUTO")
+     * @Column(type="integer", name="id_endereco")
+     */
     private $id_endereco;
+
+    /**
+     *
+     * @Column(name="cidade",type="string", length=45, nullable=false)
+     */
     private $cidade;
+
+    /**
+     *
+     * @Column(name="bairro",type="string", length=45, nullable=false)
+     */
     private $bairro;
+
+    /**
+     *
+     * @Column(name="cep",type="string", length=10, nullable=false)
+     */
     private $cep;
+
+    /**
+     *
+     * @Column(name="estado",type="string", length=2, nullable=false)
+     */
     private $estado;
+
+    /**
+     *
+     * @Column(name="numero",type="int")
+     */
     private $numero;
+
+    /**
+     *
+     * @Column(name="complemento",type="string", length=100)
+     */
     private $complemento;
+
+    /**
+     *
+     * @OneToOne(targetEntity="Cliente")
+     * @JoinColumn(name="cliente_id_cliente", referencedColumnName="id_cliente")
+     */
     private $cliente_id_cliente;
+
+    /**
+     *
+     * @OneToOne(targetEntity="FornecedorParceiro")
+     * @JoinColumn(name="fornecedor_parceiro_id_fornecedor", referencedColumnName="id_fornecedor")
+     */
     private $fornecedor_parceiro_id_fornecedor;
 
     function __construct() {
